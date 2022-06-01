@@ -1,0 +1,92 @@
+@import './variables.scss';
+
+.table {
+    margin: 0px auto;
+
+	text-align: center;
+	border-collapse: collapse; 
+    width: 100%;
+
+    
+    td { 
+        color: $dark;
+        opacity: 0.9;
+        padding: 5px 15px;
+        // font-family: Arial;
+        border: 1px solid $border;
+    }
+    th {
+        font-weight: bold;
+        color: $dark;
+        // font-family: Arial;
+        padding: 10px 15px;
+        border: 2px solid $border;
+        
+    
+    }
+    tr:hover td{ 
+        background: #23b6be27;    
+    }
+    .selected {
+        background: #23b6be27;
+    }
+    
+} 
+
+
+.buttons{
+
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .buttons__crud{
+        display: flex;
+        flex-direction: row;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            margin-left: 10px;
+            
+            height: 45px;
+            width: 255px;
+            background: #D5ECED;
+            color: #23B5BE; 
+            font-size: 25px;
+            border: none; /* Убираем рамку */
+            border-radius: 29px;
+            padding: 1rem 1.5rem;
+        }
+    }
+    
+    .btn_dwnl{
+    
+        display: flex;
+        align-items: center;
+
+        margin-left: 0px;
+        
+        height: 45px;
+        width: max-content;
+        color: #23B5BE; 
+        font-size: 35px;
+        padding: 1rem 1.5rem;
+        :hover{
+            color: #23b6be6b; /* Белый цвет текста */
+        }
+    }
+
+    button:hover{
+        background: #23B5BE;
+        color: #fff; /* Белый цвет текста */
+    }
+    button:disabled{
+        background: #d5eced6b; /* Синий цвет фона */
+        color: #23b6be6b; 
+    }
+}

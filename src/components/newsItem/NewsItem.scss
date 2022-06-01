@@ -1,0 +1,31 @@
+@import '../../style/variables.scss';
+
+
+.newsItem{
+    margin-top: 20px;
+    
+    font-size: 15px;
+    color: $main-color;
+        
+    .newsContent{
+        border: 2px solid $border;
+        border-radius: 7px;
+
+        padding: 5px;
+
+
+        .newsItemTitle{
+            font-size: 25px;
+            color: $dark;
+            font-weight: bold;
+        }
+
+        .newsItemContent{
+            
+            font-size: 20px;
+            color: $main-color;
+        }
+
+
+    }
+}

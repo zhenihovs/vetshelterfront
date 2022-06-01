@@ -1,0 +1,39 @@
+@import '../../style/variables.scss';
+
+.app{
+    &__footer{
+        border: 2px solid $border;
+        border-radius: 7px;
+
+        margin-top: 10px;
+        
+        // position:absolute;
+        // bottom: 10px;
+        width:inherit;
+        padding: 5px 10px;
+
+        color: $main-color;
+
+        display: flex;
+        flex-direction: column;
+
+        .warning{
+            margin-top: 5px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .information {
+            display: flex;
+            flex-direction: row;
+            .location {
+                margin-left: 70px;
+                
+            }
+        }
+
+        a:hover {
+            color: $dark;
+            text-decoration: underline;
+        }
+    }
+}

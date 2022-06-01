@@ -1,0 +1,40 @@
+@import '../../style/variables.scss';
+
+.app {
+    &__newsContent{
+        display: flex;
+        flex-direction: row;
+
+        .newsList{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            
+            margin: 10px 0px 0px 20px;
+
+            .newsTitle{
+                border: 2px solid $border;
+                border-radius: 7px;
+
+                font-size: 30px;
+                color: $dark;
+                font-weight: bold;
+
+                text-align: center;
+            }
+        }
+
+        .carousel{
+            align-self: center;
+
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+        
+
+
+  
+}

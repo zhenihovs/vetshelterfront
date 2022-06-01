@@ -1,0 +1,35 @@
+@import '../../style/variables.scss';
+
+
+.categoryTable {
+    margin: 0px auto;
+
+	text-align: center;
+	border-collapse: collapse; 
+    width: 300px;
+
+    
+    td { 
+        color: $dark;
+        opacity: 0.9;
+        padding: 5px 15px;
+        // font-family: Arial;
+        border: 1px solid $border;
+    }
+    th {
+        font-weight: bold;
+        color: $dark;
+        // font-family: Arial;
+        padding: 10px 15px;
+        border: 2px solid $border;
+        
+    
+    }
+    tr:hover td{ 
+        background: #23b6be27;    
+    }
+    .selected {
+        background: #23b6be27;
+    }
+    
+} 

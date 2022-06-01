@@ -1,0 +1,86 @@
+@import '../../style/variables.scss';
+
+.app {
+    &__header {
+        border: 2px solid $border;
+        border-radius: 7px;
+        
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+
+        height: max-content;
+       
+    }
+
+    &__logoTitle{
+
+        width: max-content;
+        text-align: center;
+
+        a{
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .app__logo img{
+            height: 100%;
+        }
+    
+        .app__title {
+
+            white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            color: $main-color;
+            font-size: 20px;
+            span {
+                color: $dark;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+        
+    }
+    
+    &__menu {
+        width: 85%;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            justify-content: space-around;
+            font-size: 30px;
+            color: $main-color;
+            li {
+                a:hover {
+                    color: $dark;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .btn__exit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 45px;
+        width: 150px;
+        background: #23B5BE; 
+        color: #fff; 
+        font-size: 25px;
+        border: none; /* Убираем рамку */
+        border-radius: 29px;
+        padding: 1rem 1.5rem;
+    
+        &:hover{
+            background: #23b5bea4; 
+        } 
+
+    }
+}

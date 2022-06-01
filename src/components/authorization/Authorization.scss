@@ -1,0 +1,77 @@
+@import '../../style/variables.scss';
+
+.login__dialog{
+    max-width:400px;
+    margin:40px auto
+}
+.login__content{
+    position:relative;
+    width:100%;
+    padding:40px;
+    background-color:#fff;
+    // border:1px solid rgba(0,0,0,.2);
+    border-radius:4px;
+    max-height:90vh;
+    overflow-y:auto
+}
+
+.login__close{
+    position:absolute;
+    top:8px;
+    right:14px;
+    font-size:30px;
+    color:#000;
+    opacity:.5;
+    font-weight:700;
+    border:none;
+    background-color:transparent;
+    cursor:pointer
+}
+
+.login__input__group{
+    display:flex;
+    flex-direction: column;
+    margin:20px auto;
+    width:280px;
+    height:60px;
+    background:#fff;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+    border:none;
+    font-size:15px;
+    padding: 5px 10px;
+    outline:0;
+    color: $dark;
+
+    .login__input{
+    background:#fff;
+    height:30px;
+    // width: 250px;
+    border:none;
+    font-size:20px;
+    text-align:center;
+    outline:0;
+    color: $dark;        
+    }
+
+}
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 45px;
+    width: 255px;
+    background: #23B5BE; 
+    color: #fff; 
+    font-size: 25px;
+    border: none; /* Убираем рамку */
+    border-radius: 29px;
+    padding: 1rem 1.5rem;  
+    &:hover{
+        background: #23b5bea4;
+    }
+}
+
+
